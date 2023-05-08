@@ -35,6 +35,7 @@ public class LoginController {
     @RequestMapping("/user/loginOut")
     public String loginOut(HttpSession session){
         session.invalidate();
+        //pull远程库
         //转发操作
         return "redirect:/index.html";
     }
