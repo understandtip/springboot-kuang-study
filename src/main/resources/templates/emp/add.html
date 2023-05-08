@@ -74,6 +74,7 @@
 							<select class="form-control" name="department.id" >
 								<!--  name="department.id"  是以级联的方式对employee的department属性的id属性进行赋值
 									department属性的departmentName属性为空
+									ssh-keygen -t rsa -C 2795275206@qq.com
 								-->
 								<option th:each="dep:${deps}"
 										th:text="${dep.getDepartmentName()}"
