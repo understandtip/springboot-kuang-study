@@ -1,0 +1,15 @@
+package org.project;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * @author jackqiu
+ */
+@SpringBootApplication
+public class SpringbootDemo1Application {
+	public static void main(String[] args) {
+		SpringApplication.run(SpringbootDemo1Application.class, args);
+	}
+
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>标题</title>
+</head>
+<body>
+<!--  所有的htmL元素都可以被thymeLeaf替换按管: th:元素名  -->
+
+<!--/*@thymesVar id="msg" type="msg"*/-->
+<h1 th:text="${msg}"></h1>
+<h1 th:utext="${msg}"></h1>
+<hr>
+<h1 th:each="user:${users}" th:text="${user}"></h1>
+<!--<p th:each="user:${users}" >[[ ${user} ]]</p>-->
+</body>
+</html>

@@ -1,0 +1,23 @@
+# TODO 配置数据源相关信息
+
+server:
+  port: 8080
+  servlet:  # 配置虚拟目录
+    context-path: /jackqiu
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db2?servierTimezone=UTC
+    username: root
+    password: 123456
+  thymeleaf:  # 关闭thymeleaf模板引擎的缓存
+    cache: false
+  messages:  # 我们配置文件的正真的位置
+    basename: i18n.login
+  mvc:  # 关闭默认图标
+    favicon:
+      enabled: false
+    format: # 时间日期格式化   ---> 默认为  yyyy/MM/dd 格式
+      date: yyyy-mm-dd
