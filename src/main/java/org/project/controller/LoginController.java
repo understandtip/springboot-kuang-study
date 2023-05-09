@@ -15,7 +15,7 @@ import java.util.Arrays;
 /**
  * @author jackqiu
  */
-//master分支
+//dev分支
 //用于登录的控制器类
 @Controller
 public class LoginController {
